@@ -35,6 +35,7 @@
 		/obj/item/stack/sheet/cloth = 5,
 	)
 	category = CAT_ENTERTAINMENT
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/monkeyplush
 	name = "Monkey Plushie"
@@ -45,6 +46,7 @@
 		/obj/item/grown/cotton = 10,
 	)
 	category = CAT_ENTERTAINMENT
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/mixedbouquet
 	name = "Mixed bouquet"
@@ -55,24 +57,28 @@
 		/obj/item/food/grown/poppy/geranium = 2,
 	)
 	category = CAT_ENTERTAINMENT
+	crafting_skill_required = 1 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/sunbouquet
 	name = "Sunflower bouquet"
 	result = /obj/item/bouquet/sunflower
 	reqs = list(/obj/item/food/grown/sunflower = 6)
 	category = CAT_ENTERTAINMENT
+	crafting_skill_required = 1 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/poppybouquet
 	name = "Poppy bouquet"
 	result = /obj/item/bouquet/poppy
 	reqs = list (/obj/item/food/grown/poppy = 6)
 	category = CAT_ENTERTAINMENT
+	crafting_skill_required = 1 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/rosebouquet
 	name = "Rose bouquet"
 	result = /obj/item/bouquet/rose
 	reqs = list(/obj/item/food/grown/rose = 6)
 	category = CAT_ENTERTAINMENT
+	crafting_skill_required = 1 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/spooky_camera
 	name = "Camera Obscura"
@@ -83,6 +89,7 @@
 		/datum/reagent/water/holywater = 10,
 	)
 	category = CAT_ENTERTAINMENT
+	crafting_skill_required = 4 // DARKPACK EDIT ADD - Crafting
 
 
 /datum/crafting_recipe/skateboard

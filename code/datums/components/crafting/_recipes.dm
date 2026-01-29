@@ -52,6 +52,9 @@
 	var/mass_craftable = FALSE
 	///crafting_flags var to hold bool values
 	var/crafting_flags = CRAFT_CHECK_DENSITY
+	//DARKPACK EDIT ADD - crafting
+	///Required crafts skill to craft this item
+	var/crafting_skill_required = 0
 	/**
 	* Should the recipe blacklist its result? Default behavior is to blacklist any result that isn't in reqs.
 	* Can be set to ALWAYS_BLACKLIST_RESULT or NEVER_BLACKLIST_RESULT to override the default behavior.
@@ -93,6 +96,11 @@
 		if(!part)
 			//ensure every single, same-type part used for the recipe will be transferred if the value is otherwise not specified
 			part = INFINITY
+
+	// DARKPACK EDIT ADD START - Crafting
+	if(CONFIG_GET(flag/punishing_zero_dots))
+		crafting_skill_required = clamp(crafting_skill_required, 1, 5)
+	// DARKPACK EDIT ADD END
 
 /datum/crafting_recipe/stack
 	abstract_type = /datum/crafting_recipe/stack

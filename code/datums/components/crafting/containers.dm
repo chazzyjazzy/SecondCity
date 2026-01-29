@@ -4,6 +4,7 @@
 	time = 1 SECONDS
 	reqs = list(/obj/item/paper = 5)
 	category = CAT_CONTAINERS
+	crafting_skill_required = 0 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/sillycup
 	name = "Paper Cup"
@@ -11,6 +12,7 @@
 	time = 1 SECONDS
 	reqs = list(/obj/item/paper = 2)
 	category = CAT_CONTAINERS
+	crafting_skill_required = 0 // DARKPACK EDIT ADD - Crafting
 /* // DARKPACK EDIT REMOVE
 /datum/crafting_recipe/boh
 	name = "Bag of Holding"
@@ -34,6 +36,7 @@
 		"master the art of underwater basketweaving",
 		"be underwater"
 	)
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/underwater_basket/check_requirements(mob/user, list/collected_requirements)
 	. = ..()

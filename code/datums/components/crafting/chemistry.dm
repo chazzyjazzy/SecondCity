@@ -10,6 +10,7 @@
 	)
 	time = 6 SECONDS
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 4 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/molotov
 	name = "Molotov"
@@ -20,6 +21,7 @@
 	)
 	time = 4 SECONDS
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 1 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/chemical_payload
 	name = "Chemical Payload (C4)"
@@ -31,7 +33,8 @@
 	)
 	time = 3 SECONDS
 	category = CAT_CHEMISTRY
-
+	crafting_skill_required = 5 // DARKPACK EDIT ADD - Crafting
+/* DARKPACK EDIT REMOVAL - Crafting
 /datum/crafting_recipe/chemical_payload2
 	name = "Chemical Payload (Gibtonite)"
 	result = /obj/item/bombcore/chemical
@@ -43,7 +46,7 @@
 	time = 5 SECONDS
 	category = CAT_CHEMISTRY
 	crafting_flags = parent_type::crafting_flags | CRAFT_SKIP_MATERIALS_PARITY //there are two ways to make a chem bombcore. We go with the first one for mats check
-
+*/
 /datum/crafting_recipe/alcohol_burner
 	name = "Burner (Ethanol)"
 	result = /obj/item/burner
@@ -54,6 +57,7 @@
 		/obj/item/paper = 1,
 	)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/oil_burner
 	name = "Burner (Oil)"
@@ -65,6 +69,7 @@
 		/obj/item/paper = 1,
 	)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/fuel_burner
 	name = "Burner (Fuel)"
@@ -76,6 +81,7 @@
 		/obj/item/paper = 1,
 	)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/thermometer
 	name = "Thermometer"
@@ -87,6 +93,7 @@
 		/obj/item/stack/sheet/glass = 1,
 	)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/thermometer_alt
 	name = "Thermometer"
@@ -97,6 +104,7 @@
 		/obj/item/pen = 1,
 	)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/ph_booklet
 	name = "pH booklet"
@@ -107,6 +115,7 @@
 		/obj/item/paper = 1,
 	)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/dropper //Maybe make a glass pipette icon?
 	name = "Dropper"
@@ -117,6 +126,7 @@
 		/obj/item/stack/sheet/glass = 1,
 	)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 1 // DARKPACK EDIT ADD - Crafting
 
 
 /datum/crafting_recipe/chem_separator
@@ -131,6 +141,7 @@
 		/obj/item/thermometer = 1,
 	)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 3 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/improvised_chem_heater
 	name = "Improvised chem heater"
@@ -146,6 +157,7 @@
 	)
 	machinery = list(/obj/machinery/space_heater = CRAFTING_MACHINERY_CONSUME)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 3 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/improvised_coolant
 	name = "Improvised cooling spray"
@@ -158,3 +170,4 @@
 		/datum/reagent/consumable/ice = 10,
 	)
 	category = CAT_CHEMISTRY
+	crafting_skill_required = 2 // DARKPACK EDIT ADD - Crafting

@@ -10,6 +10,7 @@
 	time = 10 SECONDS
 	category = CAT_DOORS
 	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF
+	crafting_skill_required = 4 // DARKPACK EDIT ADD - Crafting
 
 /datum/crafting_recipe/blast_doors
 	name = "Blast Door"
@@ -23,3 +24,4 @@
 	time = 30 SECONDS
 	category = CAT_DOORS
 	crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF
+	crafting_skill_required = 5 // DARKPACK EDIT ADD - Crafting

@@ -172,6 +172,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_METAMORPH "metamorph"
 #define TRAIT_MERIT_UNTAMABLE "merit_untamable"
 #define TRAIT_FAIR_GLABRO "fair_glabro"
+#define TRAIT_CLAN_FRIENDSHIP "friend_of_a_clan"
 
 
 // END TRAIT DEFINES

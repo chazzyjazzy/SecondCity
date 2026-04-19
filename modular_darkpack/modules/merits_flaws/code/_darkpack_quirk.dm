@@ -13,6 +13,8 @@
 	var/minimum_generation
 	/// Unique failure message on joining the round (in case someone joins with an incompatible quirk on their savefile for some reason)
 	var/failure_message = "One of the quirks you've selected hasn't applied - your character is ineligible to use it!"
+	/// Examine text (leave null for if this quirk doesnt give any examinetext)
+	var/examine_text
 
 /datum/quirk/darkpack/add_to_holder(mob/living/new_holder, quirk_transfer = FALSE, client/client_source, unique = TRUE, announce = TRUE)
 	if(forbidden_splats)
@@ -78,3 +80,8 @@
 
 	return TRUE
 
+/// prints the special examine text of a merit/flaw that tells the examiner something (e.g, betrayer's mark for tremere, clan friendship, infamous sire, elysium regular, etc...)
+/datum/quirk/darkpack/proc/get_examine_text(mob/living/carbon/human/quirk_holder, mob/examiner)
+	if(!examine_text)
+		return null
+	return examine_text

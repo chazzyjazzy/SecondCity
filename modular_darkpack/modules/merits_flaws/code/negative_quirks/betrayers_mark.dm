@@ -10,3 +10,12 @@
 	included_clans = list(VAMPIRE_CLAN_TREMERE)
 	failure_message = "The 'T' on your forehead appears to fade... oh no... NOT AGAIN!!!"
 
+/datum/quirk/darkpack/betrayers_mark/get_examine_text(mob/living/carbon/human/quirk_holder, mob/examiner)
+	if(quirk_holder.obscured_slots & HIDEFACE)
+		return null
+	if(!isliving(examiner))
+		return null
+	var/mob/living/living_user = examiner
+	if(!living_user.is_clan(/datum/subsplat/vampire_clan/tremere))
+		return null
+	return span_bolddanger("[quirk_holder.p_They()] [quirk_holder.p_have()] a glowing 'T' on [quirk_holder.p_their()] forehead - the Mark of a traitor to Clan Tremere!<br>")

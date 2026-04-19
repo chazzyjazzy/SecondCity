@@ -12,9 +12,14 @@ export const prey_exclusion: FeatureChoiced = {
   name: 'Prey Exclusion',
   description: 'The Prey Exclusion of this character.',
   component: FeatureDropdownInput
-}
+};
 
 export const missing_arm: FeatureChoiced = {
   name: 'Missing Arm',
+  component: FeatureDropdownInput,
+};
+
+export const clan_friendship: FeatureChoiced = {
+  name: "Clan Friendship",
   component: FeatureDropdownInput,
 };

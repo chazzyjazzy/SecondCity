@@ -10,3 +10,8 @@
 	allowed_splats = list(SPLAT_KINDRED)
 	icon = FA_ICON_TEETH
 	failure_message = "You feel your fangs retract."
+
+/datum/quirk/darkpack/permafangs/get_examine_text(mob/living/carbon/human/quirk_holder, mob/examiner)
+	if(quirk_holder.obscured_slots & HIDEFACE)
+		return null
+	return span_warning("[quirk_holder.p_They()] [quirk_holder.p_have()] visible fangs in [quirk_holder.p_their()] mouth.<br>")

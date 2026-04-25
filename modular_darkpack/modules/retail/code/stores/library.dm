@@ -14,7 +14,7 @@
 		new /datum/data/vending_product("paper bin", /obj/item/paper_bin, 20),
 		new /datum/data/vending_product("paint palette", /obj/item/paint_palette, 20),
 		new /datum/data/vending_product("Bible", /obj/item/book/bible, 20),
-		new /datum/data/vending_product("Quran", /obj/item/vampirebook/quran, 20),
+		new /datum/data/vending_product("Quran", /obj/item/vampirebook/religious/quran, 20),
 		new /datum/data/vending_product("spray paint", /obj/item/toy/crayon/spraycan, 25),
 		new /datum/data/vending_product("newspaper", /obj/item/newspaper, 5)
 	)

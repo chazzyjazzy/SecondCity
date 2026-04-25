@@ -7112,6 +7112,7 @@
 #include "modular_darkpack\modules\books\code\bookcases.dm"
 #include "modular_darkpack\modules\books\code\books.dm"
 #include "modular_darkpack\modules\books\code\faction_laws.dm"
+#include "modular_darkpack\modules\books\code\religious_books.dm"
 #include "modular_darkpack\modules\brain_damage\code\phobia.dm"
 #include "modular_darkpack\modules\brazier\code\brazier.dm"
 #include "modular_darkpack\modules\cargo\code\box_move.dm"

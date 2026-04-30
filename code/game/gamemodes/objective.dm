@@ -17,6 +17,9 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
 	///can this be granted by admins?
 	var/admin_grantable = FALSE
 
+	///should this be allowed on vtm?
+	var/darkpack_allowed = FALSE
+
 /datum/objective/New(text)
 	if(text)
 		explanation_text = text

@@ -7475,6 +7475,7 @@
 #include "modular_darkpack\modules\npc\code\nonhuman\hostile\baali_guard.dm"
 #include "modular_darkpack\modules\npc\code\nonhuman\hostile\bear.dm"
 #include "modular_darkpack\modules\npc\code\nonhuman\hostile\werewolf.dm"
+#include "modular_darkpack\modules\objectives\code\_darkpack_objective.dm"
 #include "modular_darkpack\modules\occult_artifacts\code\artifacts\_artifact.dm"
 #include "modular_darkpack\modules\occult_artifacts\code\artifacts\_artifact_config.dm"
 #include "modular_darkpack\modules\occult_artifacts\code\artifacts\bloodstar.dm"

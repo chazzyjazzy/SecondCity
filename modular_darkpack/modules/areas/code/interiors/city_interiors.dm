@@ -306,3 +306,10 @@
 	ambience_index = AMBIENCE_OFFICE
 	fire_controled = TRUE
 	domain = TRUE
+
+/area/vtm/graveyard/interior
+	name = "Graveyard Interior"
+	icon_state = "interior"
+	outdoors = FALSE
+	zone_type = ZONE_NO_MASQUERADE
+	musictracks = list('modular_darkpack/modules/ambience/sounds/music/enterlair.ogg')

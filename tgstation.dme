@@ -7290,7 +7290,6 @@
 #include "modular_darkpack\modules\government\code\drivers_license.dm"
 #include "modular_darkpack\modules\government\code\passport.dm"
 #include "modular_darkpack\modules\graveyard\code\graveyard.dm"
-#include "modular_darkpack\modules\graveyard\code\graveyard_area.dm"
 #include "modular_darkpack\modules\greebles\code\fake_platforms.dm"
 #include "modular_darkpack\modules\guestbook\code\adjective_preference.dm"
 #include "modular_darkpack\modules\guestbook\code\guestbook.dm"

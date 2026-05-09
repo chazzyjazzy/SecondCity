@@ -95,3 +95,11 @@
 	icon_state = "giovanni"
 	zone_type = ZONE_ELYSIUM
 	fire_controled = FALSE
+
+/area/vtm/graveyard
+	name = "Graveyard"
+	icon_state = "graveyard"
+	ambience_index = AMBIENCE_OFFICE
+	musictracks = list('modular_darkpack/modules/ambience/sounds/music/infected_warehouse.ogg')
+	outdoors = TRUE
+	zone_type = ZONE_NO_MASQUERADE

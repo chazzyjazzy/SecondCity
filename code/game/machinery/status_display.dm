@@ -956,8 +956,10 @@ GLOBAL_LIST_EMPTY_TYPED(greenscreen_displays, /obj/effect/abstract/greenscreen_d
 	// crops out the bits that don't fit the screen
 	add_filter("display_mask", 1, alpha_mask_filter(x = -1 * pixel_x, y = -1 * pixel_y, icon = icon('icons/obj/machines/status_display.dmi', "outline")))
 	// adds some pizzazz (copied from records)
-	underlays += mutable_appearance('icons/effects/effects.dmi', "static_base", alpha = 20)
-	add_overlay(mutable_appearance(generate_icon_alpha_mask('icons/effects/effects.dmi', "scanline"), alpha = 20))
+	// DARKPACK EDIT REMOVAL - Making the broadcasts work on our TVs
+	//underlays += mutable_appearance('icons/effects/effects.dmi', "static_base", alpha = 20)
+	//add_overlay(mutable_appearance(generate_icon_alpha_mask('icons/effects/effects.dmi', "scanline"), alpha = 20))
+	// DARKPACK EDIT REMOVAL END - Making the broadcasts work on our TVs
 
 /obj/effect/abstract/greenscreen_display/Destroy()
 	for(var/thing in displaying)

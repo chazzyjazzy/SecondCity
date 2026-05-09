@@ -7198,6 +7198,7 @@
 #include "modular_darkpack\modules\decor\code\stick.dm"
 #include "modular_darkpack\modules\decor\code\swaying.dm"
 #include "modular_darkpack\modules\decor\code\tables.dm"
+#include "modular_darkpack\modules\decor\code\television.dm"
 #include "modular_darkpack\modules\decor\code\trash.dm"
 #include "modular_darkpack\modules\decor\code\vents.dm"
 #include "modular_darkpack\modules\deprecated\code\runtime_town_types.dm"

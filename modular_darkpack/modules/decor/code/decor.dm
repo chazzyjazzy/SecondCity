@@ -710,38 +710,11 @@
 	icon_state = "pit0"
 	pit_busy = FALSE
 
-
-/obj/structure/fluff/tv
-	name = "\improper TV"
-	desc = "A slightly battered looking TV. Various infomercials play on a loop, accompanied by a jaunty tune."
-	icon = 'modular_darkpack/modules/decor/icons/television.dmi'
-	icon_state = "tv_news"
-
-/obj/structure/fluff/tv/order
-	name = "order screen"
-	desc = "A slightly battered looking TV. It shows a menu to order from."
-	icon = 'modular_darkpack/modules/decor/icons/restaurant.dmi'
-	icon_state = "order1"
-
-/obj/structure/fluff/tv/order/one
-	icon_state = "order1"
-
-/obj/structure/fluff/tv/order/two
-	icon_state = "order2"
-
-/obj/structure/fluff/tv/order/three
-	icon_state = "order3"
-
-/obj/structure/fluff/tv/order/four
-	icon_state = "order4"
-
-/obj/structure/fluff/tv/order/random
-
-/obj/structure/fluff/tv/order/random/Initialize(mapload)
-	. = ..()
-	icon_state = "order[rand(1,4)]"
-
 /obj/structure/projector
 	name = "projector"
 	icon = 'icons/obj/machines/stationary_camera.dmi'
 	icon_state = "camera"
+
+/obj/machinery/greenscreen_camera/darkpack
+	name = "television studio camera"
+	desc = "A camera which can be used to broadcast to television stations."

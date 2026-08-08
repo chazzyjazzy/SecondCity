@@ -647,31 +647,6 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen) // I hate this place
 	return TRUE
 
 /atom/movable/screen/storage/cell
-	var/datum/storage_interface/owner_interface
-
-/atom/movable/screen/storage/cell/Destroy()
-	. = ..()
-	owner_interface = null
-
-/atom/movable/screen/storage/cell/MouseEntered(location, control, params)
-	. = ..()
-	MouseMove(location, control, params)
-
-/atom/movable/screen/storage/cell/MouseExited(location, control, params)
-	. = ..()
-	var/datum/storage_interface/ui = owner_interface
-	if(!istype(ui) || !ui.parent_storage.grid)
-		return
-	if(usr.client)
-		usr.client.screen -= ui.hovering
-		ui.hovering.users -= usr.client
-
-/atom/movable/screen/storage/cell/MouseMove(location, control, params)
-	. = ..()
-	var/datum/storage_interface/ui = owner_interface
-	if(!istype(ui) || !ui.parent_storage.grid)
-		return
-	ui.update_hover(usr, params)
 
 /atom/movable/screen/storage/cell/mouse_drop_receive(atom/target, mob/living/user, params)
 	var/datum/storage/storage = master_ref?.resolve()

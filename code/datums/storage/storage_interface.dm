@@ -20,7 +20,7 @@
 	var/datum/hud/owner_hud = user.hud_used
 	closer = new(null, owner_hud, parent_storage)
 	cells = new(null, owner_hud, parent_storage)
-	cells.owner_interface = src
+	cells.owner_interface = src // DARKPACK EDIT ADD - Gridventory
 	corner_top_left = new(null, owner_hud, parent_storage)
 	corner_top_right = new(null, owner_hud, parent_storage)
 	corner_bottom_left = new(null, owner_hud, parent_storage)
@@ -29,10 +29,12 @@
 	rowjoin_right = new(null, owner_hud, parent_storage)
 	for (var/atom/movable/screen/ui_elem as anything in list_ui_elements(initializing = TRUE))
 		ui_elem.icon = ui_style
+	// DARKPACK EDIT ADD - Gridventory
 	if(parent_storage.grid)
 		hovering = new(null, owner_hud)
 	for (var/atom/movable/screen/ui_elem as anything in list_ui_elements(initializing = TRUE))
 		ui_elem.icon = ui_style
+	// DARKPACK EDIT END - Gridventory
 
 /// Returns all UI elements under this theme
 /datum/storage_interface/proc/list_ui_elements(initializing = FALSE)
@@ -47,7 +49,7 @@
 	QDEL_NULL(corner_bottom_right)
 	QDEL_NULL(rowjoin_left)
 	QDEL_NULL(rowjoin_right)
-	QDEL_NULL(hovering)
+	QDEL_NULL(hovering) // DARKPACK EDIT ADD - Gridventory
 	parent_storage = null
 	return ..()
 
@@ -140,9 +142,11 @@
 	atom/real_location,
 	list/datum/numbered_display/numbered_contents,
 )
+	// DARKPACK EDIT ADD - Gridventory
 	if(parent_storage.grid)
 		add_items_grid(screen_start_x, screen_pixel_x, screen_start_y, screen_pixel_y, real_location)
 		return
+	// DARKPACK EDIT END - Gridventory
 
 	var/current_x = screen_start_x
 	var/current_y = screen_start_y
@@ -171,28 +175,6 @@
 		current_y++
 		if(current_y - screen_start_y >= rows)
 			break
-
-/datum/storage_interface/proc/add_items_grid(screen_start_x, screen_pixel_x, screen_start_y, screen_pixel_y, atom/real_location)
-	var/turf/our_turf = get_turf(real_location)
-
-	for(var/obj/item/thing as anything in real_location)
-		if(QDELETED(thing))
-			continue
-
-		var/anchor = parent_storage.item_to_grid_anchor(thing)
-		if(!anchor)
-			continue // shouldn't happen once grid_add_item is called on insert, but don't render orphans
-
-		thing.mouse_opacity = MOUSE_OPACITY_OPAQUE
-
-		var/mutable_appearance/bound_underlay = parent_storage.get_bound_underlay(thing)
-		thing.underlays = list(bound_underlay)
-
-		thing.screen_loc = parent_storage.grid_coordinates_to_screen_loc(anchor, thing)
-		SET_PLANE(thing, ABOVE_HUD_PLANE, our_turf)
-
-		if(parent_storage.numerical_stacking)
-			thing.maptext = "" // grid mode doesn't stack visually; each item occupies its own footprint
 
 ///Silicon subtype of storage interface used by their model storage.
 /datum/storage_interface/silicon

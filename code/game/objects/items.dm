@@ -244,11 +244,6 @@
 	/// Do we apply a click cooldown when resisting this object if it is restraining them?
 	var/resist_cooldown = CLICK_CD_BREAKOUT
 
-	// ~Grid INVENTORY VARIABLES
-	/// Width we occupy on the hud - Keep null to generate based on w_class
-	var/grid_width
-	/// Height we occupy on the hud - Keep null to generate based on w_class
-	var/grid_height
 
 /obj/item/Initialize(mapload)
 	if(attack_verb_continuous)
@@ -258,10 +253,12 @@
 	if(species_exception)
 		species_exception = string_list(species_exception)
 
+	// DARKPACK EDIT ADD - Gridventory
 	if(grid_width <= 0)
 		grid_width = 1 GRID_BOXES
 	if(grid_height <= 0)
 		grid_height = 1 GRID_BOXES
+	// DARKPACK EDIT END - Gridventory
 
 	if(sharpness && force > 5) //give sharp objects butchering functionality, for consistency
 		AddComponent(/datum/component/butchering, speed = 8 SECONDS * toolspeed)

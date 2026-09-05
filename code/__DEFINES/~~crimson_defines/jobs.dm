@@ -1,6 +1,6 @@
-#define JOB_PRIMOGEN_BRUJAH "Primogen Brujah"
+#define JOB_PRIMOGEN_BRUJAH "Primogen Brujah" // Crimson Grid addition
 
-#define JOB_GAROU_KEEPER "Sept Keeper"
+#define JOB_GAROU_KEEPER "Sept Keeper" // Kinfolk included, Crimson Grid addition
 
 // Triad - Crimson Grid addition
 #define JOB_MOUNTAIN_MASTER "Mountain Master"
@@ -8,22 +8,16 @@
 #define JOB_TRIAD_RED_POLE "Red Pole"
 #define JOB_TRIAD_BLUE_LANTERNS "Blue Lanterns"
 
-// Clinic
-#define JOB_CLINIC_GUARD "Clinic Guard"
+#define JOB_DISPLAY_ORDER_BRUJAH 13 // Crimson Grid addition
 
+#define JOB_DISPLAY_ORDER_KEEPER 6 // Crimson Grid addition
 
-// Display orders
+// Crimson Grid additions
 #define JOB_DISPLAY_ORDER_MOUNTAIN_MASTER 1
 #define JOB_DISPLAY_ORDER_DEPUTY_MOUNTAIN_MASTER 2
 #define JOB_DISPLAY_ORDER_TRIAD_RED_POLE 3
 #define JOB_DISPLAY_ORDER_TRIAD_BLUE_LANTERNS 4
 
-#define JOB_DISPLAY_ORDER_BRUJAH 13
+#define SUPERVISOR_TRIAD "the Mountain Master" // Crimson Grid addition
 
-#define JOB_DISPLAY_ORDER_KEEPER 6
-
-#define JOB_DISPLAY_ORDER_CLINIC_GUARD 3
-
-#define SUPERVISOR_TRIAD "the Mountain Master"
-
-#define EXP_TYPE_TRIAD "Chinese Triad"
+#define EXP_TYPE_TRIAD "Chinese Triad" // Crimson Grid addition

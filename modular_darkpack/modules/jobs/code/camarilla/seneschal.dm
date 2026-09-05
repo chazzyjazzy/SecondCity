@@ -8,7 +8,10 @@
 	supervisors = SUPERVISOR_PRINCE
 	req_admin_notify = 1
 	minimal_player_age = 10
-	exp_requirements = EXP_REQ_MINOR
+	exp_requirements = 180
+	exp_required_type = EXP_TYPE_CAMARILLA
+	exp_required_type_department = EXP_TYPE_CAMARILLA
+	exp_granted_type = EXP_TYPE_CAMARILLA
 	config_tag = "SENESCHAL"
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/clerk

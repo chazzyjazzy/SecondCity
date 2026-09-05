@@ -37,7 +37,6 @@
 
 	job_flags = STATION_JOB_FLAGS
 	rpg_title = "Gardener"
-	tgui_icon = FA_ICON_SEEDLING
 
 /datum/outfit/job/botanist
 	name = "Botanist"

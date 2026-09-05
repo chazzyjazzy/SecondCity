@@ -5,6 +5,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	outfit = /datum/outfit/job/vampire/red_news_reporter
+	exp_granted_type = EXP_TYPE_SPIRAL
 	config_tag = "RED_NEWS_REPORTER"
 	display_order = JOB_DISPLAY_ORDER_RED_NEWS_REPORTER
 	departments_list = list(

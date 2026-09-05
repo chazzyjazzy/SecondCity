@@ -254,7 +254,7 @@
 	. = ..()
 	if(!.)
 		return
-	if(HAS_TRAIT(owner, TRAIT_LESSER_HUMANOID))
+	if(ismonkey(owner))
 		return
 	original_species = owner.dna.species.type
 	original_name = owner.real_name

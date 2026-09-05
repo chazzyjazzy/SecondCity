@@ -73,7 +73,7 @@
 	if(ishuman(target))
 		var/mob/living/carbon/human/human_target = target
 		if(human_target.dna?.species)
-			if(HAS_TRAIT(human_target, TRAIT_LESSER_HUMANOID))
+			if(ismonkey(human_target))
 				reward /= 5
 			else if(isabductor(human_target))
 				reward *= 4

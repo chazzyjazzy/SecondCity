@@ -37,7 +37,6 @@ type UserData = {
   cash: number;
   job: string;
   department: string;
-  is_captain_card: boolean;
 };
 
 type Category = {
@@ -261,9 +260,7 @@ const Product = (props: ProductProps) => {
 
   const colorable = !!product.colorable;
   const free = all_products_free || productStock.free || product.price === 0;
-  const discount =
-    !product.premium &&
-    (user?.is_captain_card || department === user?.department);
+  const discount = !product.premium && department === user?.department;
   const remaining = productStock.amount;
   const redPrice = Math.round(product.price * jobDiscount);
   const disabled =
@@ -287,7 +284,7 @@ const Product = (props: ProductProps) => {
     onClick: () => {
       act('vend', {
         ref: product.ref,
-        premium: !!product.premium,
+        discountless: !!product.premium,
       });
     },
   };

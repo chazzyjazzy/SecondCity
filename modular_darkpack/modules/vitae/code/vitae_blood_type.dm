@@ -1,5 +1,5 @@
 /datum/blood_type/kindred
-	name = "AB+" //CRIMSON GRID EDIT | PR: Make Medical Stuff not masq break you | OG: name = "V+"
+	name = "V+"
 	dna_string = "Vampiric DNA"
 	reagent_type = /datum/reagent/blood/vitae
 	compatible_types = list(

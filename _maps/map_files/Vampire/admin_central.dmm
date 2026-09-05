@@ -32,6 +32,7 @@
 /obj/structure/chair/office/darkpack/green{
 	dir = 8
 	},
+/obj/effect/landmark/ert_spawn,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/briefing)
@@ -1264,6 +1265,7 @@
 /obj/structure/chair/office/darkpack/green{
 	dir = 8
 	},
+/obj/effect/landmark/ert_spawn,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -6300,6 +6302,7 @@
 /obj/structure/chair/office/darkpack/green{
 	dir = 1
 	},
+/obj/effect/landmark/ert_spawn,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -8709,6 +8712,7 @@
 /area/centcom/central_command_areas/supplypod)
 "MJ" = (
 /obj/structure/chair/office/darkpack/green,
+/obj/effect/landmark/ert_spawn,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/briefing)
@@ -9256,6 +9260,7 @@
 /obj/structure/chair/office/darkpack/green{
 	dir = 1
 	},
+/obj/effect/landmark/ert_spawn,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/briefing)
@@ -9473,6 +9478,7 @@
 /area/centcom/central_command_areas/evacuation)
 "PM" = (
 /obj/structure/chair/office/darkpack/green,
+/obj/effect/landmark/ert_spawn,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -10968,6 +10974,7 @@
 /area/centcom/tdome/observation)
 "Wy" = (
 /obj/structure/chair/office/darkpack/green,
+/obj/effect/landmark/ert_spawn,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/briefing)
 "WE" = (

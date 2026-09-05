@@ -43,7 +43,6 @@
 	job_flags = STATION_JOB_FLAGS
 
 	rpg_title = "Undertaker"
-	tgui_icon = FA_ICON_SKULL
 
 /datum/outfit/job/coroner
 	name = "Coroner"

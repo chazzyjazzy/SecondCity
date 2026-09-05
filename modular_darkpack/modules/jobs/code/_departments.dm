@@ -126,7 +126,6 @@
 /datum/job_department/city_services
 	department_name = DEPARTMENT_CITY_SERVICES
 	department_bitflags = DEPARTMENT_BITFLAG_CITY_SERVICES
-	department_experience_type = EXP_TYPE_SERVICES
 	display_order = 14
 	// give its own ui color?
 
@@ -135,7 +134,8 @@
 	department_name = DEPARTMENT_SOCIETY_OF_LEOPOLD
 	department_bitflags = DEPARTMENT_BITFLAG_SOCIETY_OF_LEOPOLD
 	department_head = /datum/job/vampire/abbe
-	department_experience_type = EXP_TYPE_SOCIETY_OF_LEOPOLD
+	// why are you reusing the church xp.
+	department_experience_type = EXP_TYPE_CHURCH
 	display_order = 15
 	ui_color = "#fff022"
 

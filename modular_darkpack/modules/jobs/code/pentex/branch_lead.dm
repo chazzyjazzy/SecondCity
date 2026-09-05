@@ -8,8 +8,10 @@
 	supervisors = "the Board"
 	req_admin_notify = 1
 	minimal_player_age = 25
-	exp_requirements = EXP_REQ_HEAD
+	exp_requirements = 180
+	exp_required_type = EXP_TYPE_SPIRAL
 	exp_required_type_department = EXP_TYPE_SPIRAL
+	exp_granted_type = EXP_TYPE_SPIRAL
 	config_tag = "PENTEX_BRANCH_LEAD"
 	job_flags = CITY_JOB_FLAGS
 	outfit = /datum/outfit/job/vampire/branch_lead

@@ -426,7 +426,7 @@
 	for(var/datum/mind/khrushchev as anything in members - head_revolutionaries)
 		if(!can_be_headrev(khrushchev))
 			continue
-		if(HAS_TRAIT(khrushchev.current, TRAIT_LESSER_HUMANOID))
+		if(ismonkey(khrushchev.current))
 			monkey_promotable += khrushchev
 		else
 			promotable += khrushchev

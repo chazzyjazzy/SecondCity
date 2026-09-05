@@ -33,7 +33,6 @@
 	)
 	rpg_title = "Merchantman"
 	job_flags = STATION_JOB_FLAGS
-	tgui_icon = FA_ICON_BOX
 
 
 /datum/outfit/job/cargo_tech

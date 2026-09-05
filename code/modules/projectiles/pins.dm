@@ -390,7 +390,7 @@
 	fail_message = "not a monkey!"
 
 /obj/item/firing_pin/monkey/pin_auth(mob/living/user)
-	if(!HAS_TRAIT(user, TRAIT_SIMIAN))
+	if(!is_simian(user))
 		playsound(src, SFX_SCREECH, 75, TRUE)
 		return FALSE
 	return TRUE

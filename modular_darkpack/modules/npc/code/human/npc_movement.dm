@@ -254,6 +254,15 @@
 
 	return FALSE
 
+/mob/living/carbon/human/npc/proc/find_visible_fire()
+	for (var/obj/effect/abstract/turf_fire/fire as anything in SSturf_fire.processing)
+		if (fire.z != z)
+			continue
+		if (can_see(src, fire, DEFAULT_SIGHT_DISTANCE))
+			return fire
+
+	return null
+
 /mob/living/carbon/human/npc/proc/handle_automated_movement()
 	if (!can_npc_move())
 		return
@@ -270,7 +279,7 @@
 		return
 
 	// Checks for fire, clearing the stored fire if none is in view
-	afraid_of_fire = locate(/obj/effect/abstract/turf_fire) in view(DEFAULT_SIGHT_DISTANCE, src)
+	afraid_of_fire = find_visible_fire()
 
 	// Combat behaviour
 	if (danger_source)

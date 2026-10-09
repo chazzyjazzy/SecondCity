@@ -102,6 +102,11 @@
 	if(!owner || !reagent || (dead && !(reagent.chemical_flags & REAGENT_DEAD_PROCESS)))
 		return FALSE
 
+	// DARKPACK EDIT ADD START - Liverless metabolism
+	if(liverless && !reagent.self_consuming)
+		return FALSE
+	// DARKPACK EDIT ADD END
+
 	var/metabolized_volume = reagent.compute_metabolization(owner, seconds_per_tick)
 	var/metabolization_ratio = REM * metabolized_volume
 
@@ -109,8 +114,10 @@
 	if(tick_return & COMSIG_MOB_STOP_REAGENT_TICK)
 		return FALSE
 
+	/* DARKPACK EDIT REMOVAL - Liverless metabolism
 	if(liverless && !reagent.self_consuming) //need to be6 metabolized
 		return FALSE
+	*/
 
 	var/need_mob_update = FALSE
 	if(reagents_metabolized)

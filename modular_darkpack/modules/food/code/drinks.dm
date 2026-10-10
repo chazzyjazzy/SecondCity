@@ -49,6 +49,7 @@
 	nutriment_factor = 1 * REAGENTS_METABOLISM
 	boozepwr = 50
 	taste_description = "blood sweet"
+	kindred_metabolizes = TRUE
 	//glass_name = "glass of sanquine beer"
 	//glass_desc = "A freezing pint of vitae."
 

@@ -103,7 +103,7 @@
 		return FALSE
 
 	// DARKPACK EDIT ADD START - Liverless metabolism
-	if(liverless && !reagent.self_consuming)
+	if(liverless && !reagent.can_metabolize_liverless(owner))
 		return FALSE
 	// DARKPACK EDIT ADD END
 
@@ -159,10 +159,10 @@
 	for(var/datum/reagent/reagent as anything in cached_reagents)
 		if(QDELETED(reagent.holder))
 			continue
-		if(keep_liverless && reagent.self_consuming) //Will keep working without a liver
-			continue
 		if(!C)
 			C = reagent.holder.my_atom
+		if(keep_liverless && reagent.can_metabolize_liverless(C)) //Will keep working without a liver // DARKPACK EDIT CHANGE - Liverless metabolism - Original: if(keep_liverless && reagent.self_consuming)
+			continue
 		if(reagent.metabolizing)
 			reagent.metabolizing = FALSE
 			reagent.on_mob_end_metabolize(C)

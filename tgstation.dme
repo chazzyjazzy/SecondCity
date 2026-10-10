@@ -7374,6 +7374,8 @@
 #include "modular_darkpack\master_files\code\modules\power\lighting\lighting_mapping_helpers.dm"
 #include "modular_darkpack\master_files\code\modules\projectiles\ammunition\_ammunition.dm"
 #include "modular_darkpack\master_files\code\modules\projectiles\projectile\bullets.dm"
+#include "modular_darkpack\master_files\code\modules\reagents\chemistry\reagents.dm"
+#include "modular_darkpack\master_files\code\modules\reagents\chemistry\reagents\other_reagents.dm"
 #include "modular_darkpack\master_files\code\modules\rituals\code\ritual_rune.dm"
 #include "modular_darkpack\master_files\code\modules\rituals\code\ritual_rune_drawing.dm"
 #include "modular_darkpack\master_files\code\modules\rituals\code\ritual_tome.dm"

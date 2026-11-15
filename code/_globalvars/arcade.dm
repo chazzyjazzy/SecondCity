@@ -52,7 +52,7 @@ GLOBAL_LIST_INIT(arcade_prize_pool, list(
 	/obj/item/extendohand/acme = 1,
 	/obj/item/hot_potato/harmless/toy = 1,
 	/obj/item/card/emagfake = 1,
-	/obj/item/clothing/shoes/wheelys = 2,
+	// /obj/item/clothing/shoes/wheelys = 2, // DARKPACK EDIT REMOVAL - Wheely Shoes
 	/obj/item/clothing/shoes/kindle_kicks = 2,
 	/obj/item/toy/plush/moth = 2,
 	/obj/item/toy/plush/pkplush = 2,

@@ -98,7 +98,7 @@
 	)
 	contraband = list(
 		/obj/item/dice/fudge = 9,
-		/obj/item/clothing/shoes/wheelys/skishoes = 4,
+		// /obj/item/clothing/shoes/wheelys/skishoes = 4, // DARKPACK EDIT REMOVAL - Wheely Shoes
 		/obj/item/instrument/musicalmoth = 1,
 		/obj/item/gun/ballistic/revolver/russian = 1, //the most dangerous game
 		/obj/item/skillchip/acrobatics = 1,
@@ -107,7 +107,7 @@
 		/obj/item/disk/holodisk = 5,
 		/obj/item/rcl = 2,
 		/obj/item/airlock_painter = 1,
-		/obj/item/clothing/shoes/wheelys/rollerskates= 3,
+		// /obj/item/clothing/shoes/wheelys/rollerskates= 3, // DARKPACK EDIT REMOVAL - Wheely Shoes
 		/obj/item/melee/skateboard/pro = 3,
 		/obj/item/melee/skateboard/hoverboard = 1,
 		/obj/item/music_tape/robocop = 1,
